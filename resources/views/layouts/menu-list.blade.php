@@ -43,7 +43,7 @@
     <i class="ph-duotone ph-chart-pie"></i>
   </li>
   <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('movimento.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-archive"></i>
       </span>
@@ -51,11 +51,11 @@
     </a>
   </li>
   <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('guias.pagamento.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-currency-circle-dollar"></i>
       </span>
-      <span class="pc-mtext">Guias pagamento</span>
+      <span class="pc-mtext">Guias de pagamento</span>
     </a>
   </li>
    <li class="pc-item pc-hasmenu">
@@ -66,14 +66,14 @@
       <span class="pc-mtext">Folha Pagamento</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span
     ></a>
     <ul class="pc-submenu">
-      <li class="pc-item"><a class="pc-link" href="/application/gallery-grid">Folha mensal</a></li>
-      <li class="pc-item"><a class="pc-link" href="/application/gallery-masonry">Colaboradores</a></li>
-      <li class="pc-item"><a class="pc-link" href="/application/gallery-masonry">Férias</a></li>
-      <li class="pc-item"><a class="pc-link" href="/application/gallery-masonry">Atestado</a></li>
+      <li class="pc-item"><a class="pc-link" href="{{ route('folha.pagamento.index') }}">Folha mensal</a></li>
+      <li class="pc-item"><a class="pc-link" href="{{ route('folha.colaboradores.index') }}">Colaboradores</a></li>
+      <li class="pc-item"><a class="pc-link" href="{{ route('folha.ferias.index') }}">Férias</a></li>
+      <li class="pc-item"><a class="pc-link" href="{{ route('folha.atestados.index') }}">Atestado</a></li>
     </ul>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('notaFiscal.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-file-arrow-up"></i>
       </span>
@@ -81,7 +81,7 @@
     </a>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('demonstrativosContabeis.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-chart-pie"></i>
       </span>
@@ -89,15 +89,15 @@
     </a>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('certidoes.index') }}" class="pc-link">
       <span class="pc-micon">
-        <i class="ph-duotone ph-list-checks"></i>
+        <i class="ph-duotone ph-scroll"></i>
       </span>
       <span class="pc-mtext">Certidões</span>
     </a>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('alvarasLicencas.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-certificate"></i>
       </span>
@@ -105,7 +105,7 @@
     </a>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('documentosEmpresa.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-folder-simple-lock"></i>
       </span>
@@ -117,7 +117,7 @@
     <i class="ph-duotone ph-chart-pie"></i>
   </li>
   <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('alteracaoCnpj.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-note-pencil"></i>
       </span>
@@ -125,7 +125,7 @@
     </a>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('certificadoDigital.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-circle-wavy-check"></i>
       </span>
@@ -133,7 +133,7 @@
     </a>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('impostoRenda.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-hand-coins"></i>
       </span>
@@ -145,7 +145,7 @@
     <i class="ph-duotone ph-chart-pie"></i>
   </li>
   <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('processos.andamento.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-hourglass"></i>
       </span>
@@ -153,7 +153,7 @@
     </a>
   </li>
     <li class="pc-item">
-    <a href="/widget/w_statistics" class="pc-link">
+    <a href="{{ route('processos.finalizados.index') }}" class="pc-link">
       <span class="pc-micon">
         <i class="ph-duotone ph-check-circle"></i>
       </span>
