@@ -68,8 +68,7 @@
                                   class="btn btn-sm btn-light-secondary"
                                   data-bs-toggle="modal"
                                   data-bs-target="#address-edit_add-modal"
-                                  ><i class="ph-duotone ph-pencil-simple-line"></i> Change</button
-                                >
+                                  ><i class="ph-duotone ph-pencil-simple-line"></i> Change</button>
                               </div>
                               <h5>Garcia-Cameron and Sons</h5>
                               <p class="mb-0">8534 Saunders Hill Apt. 583</p>

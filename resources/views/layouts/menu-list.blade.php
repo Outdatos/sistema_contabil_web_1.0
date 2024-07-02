@@ -1,4 +1,4 @@
-<li class="pc-item pc-caption">
+{{-- <li class="pc-item pc-caption">
     <label>Navigation</label>
   </li>
   <li class="pc-item pc-hasmenu">
@@ -37,9 +37,9 @@
       <li class="pc-item"><a class="pc-link" href="/demo/layout-advanced">Advanced</a></li>
       <li class="pc-item"><a class="pc-link" href="/demo/layout-extended">Extended</a></li>
     </ul>
-  </li>
+  </li> --}}
   <li class="pc-item pc-caption">
-    <label>Serviços</label>
+    <label>Ferramentas</label>
     <i class="ph-duotone ph-chart-pie"></i>
   </li>
   <li class="pc-item">
