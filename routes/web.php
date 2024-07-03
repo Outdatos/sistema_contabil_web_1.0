@@ -75,7 +75,9 @@ Route::middleware(['auth'])->group(function () {
    
 
 
-
+    Route::get('uploader-codenepal', function() {
+        return view('elements.file_uploader');
+    });
 
 
 
