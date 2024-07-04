@@ -6,6 +6,7 @@
         margin: auto;
         background-color: white;
     }
+    
 
     .header-section {
         padding: 25px 0px;
@@ -209,6 +210,44 @@
     }
 </style>
 
+
+<!-- [scrollbar] start -->
+<style>
+    /* CSS para o scroll personalizado */
+    .modal-body {
+        max-height: calc(100vh - 250px); /* Altura máxima do modal-body */
+        overflow-y: auto; /* Adicionar scroll vertical apenas quando necessário */
+        padding-right: 20px; /* Espaço para o scroll vertical */
+    }
+
+    /* Estilização do scrollbar para navegadores WebKit */
+    .modal-body::-webkit-scrollbar {
+        width: 8px; /* Largura do scrollbar */
+    }
+
+    /* Estilização da trilha do scrollbar */
+    .modal-body::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Cor do fundo do scrollbar */
+    }
+
+    /* Estilização do thumb do scrollbar */
+    .modal-body::-webkit-scrollbar-thumb {
+        background-color: #dadada; /* Cor do thumb do scrollbar */
+        border-radius: 8px; /* Cantos arredondados do thumb */
+    }
+
+    /* Efeito de hover no thumb do scrollbar */
+    .modal-body::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8; /* Cor do thumb do scrollbar ao passar o mouse */
+    }
+</style>
+
+
+<!-- [scrollbar] end -->
+
+
+
+
 <!-- [ Modal Movimento ] start -->
 <div class="modal fade" id="address-edit_add-modal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">  
     <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
@@ -253,7 +292,7 @@
                     <div class="col-xl-8">
                         <div class="mb-3">
                             <label class="form-label">Descrição</label>
-                            <input type="text" class="form-control" placeholder="Digite a descrição...">
+                            <input type="text" class="form-control">
                             @error('title_id')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
@@ -297,6 +336,8 @@
 </div>
 
 <!-- [ Modal Movimento ] end -->
+
+
 
 
 <script>

@@ -9,6 +9,10 @@
 @endsection
 
 @section('content')
+
+<!-- [ Components ] start -->
+@include('components.modais')
+
     <!-- [ Main Content ] start -->
     <div class="row">
         <!-- [ Hover-table ] start -->
@@ -19,9 +23,8 @@
                         <h3 class="mb-0">Meu movimento</h3>
                         <p class="mb-0">Documentos para fechamento mensal</p>
                     </span>
-                    <button type="button" class="btn btn-secondary d-inline-flex" type="button"
-                        class="btn btn-primary"  data-bs-toggle="modal"
-                        data-bs-target="#address-edit_add-modal"><i
+                    <button type="button" class="btn btn-secondary d-inline-flex" type="button" class="btn btn-primary"
+                        data-bs-toggle="modal" data-bs-target="#address-edit_add-modal"><i
                             class="ph-duotone ph-upload me-2"></i>Adicionar
                     </button>
                 </div>
@@ -165,7 +168,4 @@
         <!-- [ Hover-table ] end -->
     </div>
     <!-- [ Main Content ] end -->
-
-    @include('components.modais')
-
 @endsection
