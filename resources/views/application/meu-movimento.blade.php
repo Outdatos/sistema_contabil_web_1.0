@@ -11,7 +11,7 @@
 @section('content')
 
 <!-- [ Components ] start -->
-@include('components.modais')
+@include('components.modalpopup')
 
     <!-- [ Main Content ] start -->
     <div class="row">
