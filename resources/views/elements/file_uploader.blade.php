@@ -2,25 +2,7 @@
     /* Import Google font - Poppins */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-    }
 
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        background: #6990F2;
-    }
-
-    ::selection {
-        color: #fff;
-        background: #6990F2;
-    }
 
     .wrapper {
         width: 430px;
@@ -143,19 +125,9 @@
     }
 </style>
 
-<!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload with Progress Bar | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
 
-<body>
+
     <div class="wrapper">
         <header>File Uploader JavaScript</header>
         <form action="#">
@@ -245,6 +217,3 @@
         }
     </script>
 
-</body>
-
-</html>

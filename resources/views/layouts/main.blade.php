@@ -14,6 +14,9 @@
         <!-- [Favicon] icon -->
         <link rel="icon" href="{{ URL::asset('build/images/favicon.svg') }}" type="image/x-icon">
 
+        <!-- [Componente uploader] icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
         @yield('css')
 
         @include('layouts.head-css')
