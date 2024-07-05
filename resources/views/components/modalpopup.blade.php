@@ -61,7 +61,6 @@
                                 </div>
                             </div>
                             <!-- [anexo] end -->
-                        {{-- </form> --}}
                     </div>
                     <div class="modal-footer justify-content-between">
                         <div class="flex-grow-1 text-end">
@@ -69,6 +68,7 @@
                             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
                         </div>
                     </div>
+                     {{-- </form> --}}
                 </div>
             </div>
         </div>
