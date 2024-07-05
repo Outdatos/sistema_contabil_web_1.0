@@ -39,6 +39,7 @@ Route::middleware(['auth'])->group(function () {
 
     // Define as rotas do movimento do mês
     Route::get('meu-movimento', [MovimentoController::class, 'movimentoIndex'])->name('movimento.index');
+    Route::post('meu-movimento/upload', [MovimentoController::class, 'movimentoStore'])->name('movimento.store');
 
     // Define as rotas das guias de pagamento
     Route::get('guias-pagamento', [GuiasController::class, 'guiasPagamentoIndex'])->name('guias.pagamento.index');
