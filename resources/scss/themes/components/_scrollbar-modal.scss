@@ -1,0 +1,42 @@
+// ================================
+//   20. Scrollbar Modal css start
+// ================================
+
+.scrollbar-modal {
+max-height: calc(100vh - 250px);
+/* Altura máxima do modal-body */
+overflow-y: auto;
+/* Adicionar scroll vertical apenas quando necessário */
+padding-right: 20px;
+/* Espaço para o scroll vertical */
+}
+
+/* Estilização do scrollbar para navegadores WebKit */
+.scrollbar-modal::-webkit-scrollbar {
+width: 8px;
+/* Largura do scrollbar */
+}
+
+/* Estilização da trilha do scrollbar */
+.scrollbar-modal::-webkit-scrollbar-track {
+background: #f1f1f1;
+/* Cor do fundo do scrollbar */
+}
+
+/* Estilização do thumb do scrollbar */
+.scrollbar-modal::-webkit-scrollbar-thumb {
+background-color: #dadada;
+/* Cor do thumb do scrollbar */
+border-radius: 8px;
+/* Cantos arredondados do thumb */
+}
+
+/* Efeito de hover no thumb do scrollbar */
+.scrollbar-modal::-webkit-scrollbar-thumb:hover {
+background: #a8a8a8;
+/* Cor do thumb do scrollbar ao passar o mouse */
+}
+
+// ================================
+//   20. Scrollbar Modal css end
+// ================================

@@ -42,7 +42,7 @@
                             <tbody>
                                 <tr>
                                     <td>02/01/2024 11:15</td>
-                                    <td>RELATÓRIO MÁQUINAS DE CARTÃO</td>
+                                    <td>Relatório máquinas de cartão</td>
                                     <td><i class="ph-duotone ph-clock text-orange-300 f-22 ms-3" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Aguardando recebimento"></i></td>
                                     <td class="text-center">
@@ -58,7 +58,7 @@
                                 </tr>
                                 <tr>
                                     <td>02/01/2024 11:15</td>
-                                    <td>NOTAS DE ENTRADA</td>
+                                    <td>Notas de entrada</td>
                                     <td><i class="ph-duotone ph-clock text-orange-300 f-22 ms-3" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Aguardando recebimento"></i></td>
                                     <td class="text-center">
@@ -74,7 +74,7 @@
                                 </tr>
                                 <tr>
                                     <td>02/01/2024 11:15</td>
-                                    <td>RELATÓRIO DE VENDAS</td>
+                                    <td>Relatório de vendas</td>
                                     <td><i class="ph-duotone ph-check-fat text-green-200 f-20 ms-3" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Recebido"></i></td>
                                     <td class="text-center">
@@ -87,7 +87,7 @@
                                 </tr>
                                 <tr>
                                     <td>02/01/2024 11:15</td>
-                                    <td>NOTAS DE SERVIÇO</td>
+                                    <td>Notas de serviço</td>
                                     <td><i class="ph-duotone ph-check-fat text-green-200 f-20 ms-3" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Recebido"></i></td>
                                     <td class="text-center">
