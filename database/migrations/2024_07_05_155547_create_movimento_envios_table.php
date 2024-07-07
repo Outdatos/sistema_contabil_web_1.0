@@ -15,7 +15,7 @@ return new class extends Migration
             $table->boolean('atd')->default(false);
             $table->unsignedBigInteger('competencia_id');
             $table->string('descricao');
-            $table->string('files_anexos');
+            $table->json('files_anexos');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('admin_id')->references('id')->on('users');
