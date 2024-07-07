@@ -1,10 +1,10 @@
 <style>
     .file-dropzone {
-        border: 2px dashed #c3c3c3;
+        border: 3px dashed #c3c3c3;
         padding: 20px;
-        margin-bottom: 20px;
         position: relative;
-                cursor: pointer;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     .dropzone-content {
@@ -60,8 +60,7 @@
                             <h5 class="mb-0">Registrar movimento</h5>
                         </div>
                         <div class="d-flex align-items-center justify-content-end">
-                            <a href="#" class="avtar avtar-s btn-link-danger" data-bs-dismiss="modal"
-                                data-bs-toggle="tooltip" title="Close">
+                            <a href="#" class="avtar avtar-s btn-link-danger" data-bs-dismiss="modal">
                                 <i class="ti ti-x f-20"></i>
                             </a>
                         </div>
@@ -96,15 +95,15 @@
                                     <div class="dropzone-icon">
                                         <i class="bi bi-file-earmark-plus"></i>
                                     </div>
-                                    <div class="dropzone-text">
-                                        Clique ou arraste arquivos aqui para carregar
+                                    <div class="dropzone-text text-center">
+                                        <i class="ph-duotone ph-upload f-30 text-gray-400"></i>
+                                        <h6 class="text-gray-400">Clique aqui para anexar.</h6>
                                     </div>
                                 </div>
-                                <!-- Input file que será clicado indiretamente -->
+                                 <div id="file-list" class="file-list"></div>  
                                 <input type="file" id="file-input" name="files_anexos[]" multiple
                                     style="display: none;">
                             </div>
-                            <div id="file-list" class="file-list"></div>
                             <!-- [anexo] end -->
                         </div>
                         <div class="modal-footer justify-content-between">
@@ -122,12 +121,12 @@
 @endif
 <!-- [ Dropzone ] -->
 <script>
-      document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const fileInput = document.getElementById('file-input');
         const fileList = document.getElementById('file-list');
 
         // Event listener para quando os arquivos são selecionados
-        fileInput.addEventListener('change', function () {
+        fileInput.addEventListener('change', function() {
             const files = fileInput.files;
 
             fileList.innerHTML = '';
@@ -137,7 +136,7 @@
                 const listItem = document.createElement('div');
                 listItem.classList.add('file-item');
                 listItem.innerHTML = `
-                    <span><i class="bi bi-file-earmark-text"></i>${file.name}</span>
+                    <span class="d-flex"><i class="ph-duotone ph-file text-gray-500 f-22"></i>${file.name}</span>
                     <span>${fileSize}</span>
                 `;
                 fileList.appendChild(listItem);
