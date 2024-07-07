@@ -13,6 +13,15 @@
 <!-- [ Components ] start -->
 @include('components.modalpopup')
 
+@if ($errors->any())
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('movimento-add-modal'));
+            myModal.show();
+        });
+    </script>
+@endif
+   
     <!-- [ Main Content ] start -->
     <div class="row">
         <!-- [ Hover-table ] start -->
@@ -24,7 +33,7 @@
                         <p class="mb-0">Documentos para fechamento mensal</p>
                     </span>
                     <button type="button" class="btn btn-secondary d-inline-flex" type="button" class="btn btn-primary"
-                        data-bs-toggle="modal" data-bs-target="#address-edit_add-modal"><i
+                        data-bs-toggle="modal" data-bs-target="#movimento-add-modal"><i
                             class="ph-duotone ph-upload me-2"></i>Adicionar
                     </button>
                 </div>
