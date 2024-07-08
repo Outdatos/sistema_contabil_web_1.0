@@ -34,10 +34,10 @@ class MovimentoController extends Controller {
         $validatedData = $request->validate([
             'competencia_id' => 'required',
             'descricao' => 'required',
-            'files_anexos' => 'required|array|min:1',
-            'files_anexos.*' => 'required|file|mimes:pdf,doc,docx|max:2048', 
+            'files_anexos' => 'required|array|min:1', 
+            'files_anexos.*' => 'file|mimes:jpg,jpeg,png,pdf,rar,zip,ofx,xls,xlsx,doc,docx|max:20480' 
         ], ValidationMessagesService::messages());
-
+        
         $user = auth()->user();
 
         $files = $request->file( 'files_anexos' );

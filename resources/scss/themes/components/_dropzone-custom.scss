@@ -3,7 +3,7 @@
 // ============================
 
 .file-dropzone {
-    border: 3px dashed #c3c3c3;
+    border: 2px dashed #c3c3c3;
     padding: 20px;
     position: relative;
     border-radius: 8px;
@@ -12,16 +12,12 @@
 }
 
 .drop-error {
-    border: 1px solid #f44236;
+    border: 2px dashed #f44236;
     padding: 20px;
     position: relative;
     border-radius: 8px;
     cursor: pointer;
     transition: border 0.3s ease;
-}
-
-.file-dropzone:hover {
-    border: 3px dashed rgb(91, 255, 91); 
 }
 
 .dropzone-content {

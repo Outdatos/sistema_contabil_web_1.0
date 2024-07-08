@@ -52,9 +52,8 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Anexos</label>
-                                <div
-                                    class=" @if ($errors->has('files_anexos')) drop-error @else file-dropzone @endif              
-                                onclick="document.getElementById('file-input').click();">
+                                <div class="@if ($errors->any()) drop-error @else file-dropzone @endif"
+                                    onclick="document.getElementById('file-input').click();">
                                     <div class="dropzone-content">
                                         <div class="dropzone-icon">
                                             <i class="bi bi-file-earmark-plus"></i>
@@ -64,11 +63,18 @@
                                             <h6 class="text-gray-400">Clique aqui para anexar.</h6>
                                         </div>
                                     </div>
-                                    <div id="file-list" class="file-list"></div>
-                                    <input type="file" id="file-input" name="files_anexos[]" multiple
-                                        style="display: none;">
+                                    <div id="file-list" class="file-list">
+                                    </div>
+                                    <input type="file"
+                                        class="@error('files_anexos.*') is-invalid @enderror @error('files_anexos') is-invalid @enderror"
+                                        id="file-input" name="files_anexos[]" multiple style="display: none;">
+                                    @error('files_anexos.*')
+                                        <div class="invalid-feedback text-center"><i data-feather="alert-circle"></i>
+                                            {{ $message }}</div>
+                                    @enderror
                                     @error('files_anexos')
-                                        <div class="invalid-feedback">{{ $message }}</div>
+                                        <div class="invalid-feedback text-center"><i data-feather="alert-circle"></i>
+                                            {{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
@@ -81,11 +87,11 @@
                             </div>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
     @endif
 @endif
+
 <!-- [ Dropzone ] -->
 <script src="{{ asset('build/js/components/dropzone-custom.js') }}"></script>
